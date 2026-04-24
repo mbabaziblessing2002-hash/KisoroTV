@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Kisoro TV</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 20px 100px;
+            text-align: center;
+            color: var(--white);
+            margin-top: 80px;
+        }
+        
+        .about-header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .about-section {
+            padding: 80px 0;
+        }
+        
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .about-content h2 {
+            color: var(--primary-green);
+            margin: 40px 0 20px;
+            font-size: 2rem;
+        }
+        
+        .about-content p {
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .mission-vision {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 60px 0;
+        }
+        
+        .mission-card, .vision-card {
+            background: var(--light-gray);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .mission-card h3, .vision-card h3 {
+            color: var(--primary-green);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .mission-card i, .vision-card i {
+            font-size: 3rem;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .about-header h1 {
+                font-size: 2rem;
+            }
+            
+            .mission-vision {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">KISORO<span>TV</span></span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="tourism.html" class="nav-link">Tourism</a></li>
+                <li class="nav-item"><a href="culture.html" class="nav-link">Culture</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="about-header">
+        <h1>About Kisoro TV</h1>
+        <p>The Voice of South-Western Uganda</p>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Who We Are</h2>
+                <p>Kisoro TV is a digital media platform dedicated to showcasing the beauty, culture, news, and development stories of Kisoro District in South-Western Uganda. We serve as a bridge connecting local communities with the wider world.</p>
+                
+                <p>Founded with a passion for storytelling and community development, we bring you authentic content about the stunning landscapes, rich cultural heritage, wildlife conservation, and the vibrant communities that call Kisoro home.</p>
+                
+                <div class="mission-vision">
+                    <div class="mission-card">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Our Mission</h3>
+                        <p>To inform, educate, and entertain while promoting tourism, preserving culture, and fostering community development in Kisoro District.</p>
+                    </div>
+                    
+                    <div class="vision-card">
+                        <i class="fas fa-eye"></i>
+                        <h3>Our Vision</h3>
+                        <p>To be the leading digital media platform that showcases Kisoro District as a premier destination for tourism, culture, and sustainable development.</p>
+                    </div>
+                </div>
+                
+                <h2>What We Do</h2>
+                <p>We produce high-quality video content, news reports, documentaries, and cultural features that highlight:</p>
+                <ul style="color: var(--text-gray); line-height: 2; margin-left: 20px;">
+                    <li>Local news and community developments</li>
+                    <li>Tourism opportunities including gorilla trekking and volcano hiking</li>
+                    <li>Cultural heritage of Bafumbira, Bakiga, and Batwa communities</li>
+                    <li>Environmental conservation efforts</li>
+                    <li>Educational and social development initiatives</li>
+                </ul>
+                
+                <h2>Our Values</h2>
+                <p>We are committed to accuracy, integrity, and respect in all our reporting. We believe in the power of storytelling to inspire positive change, preserve cultural heritage, and promote sustainable tourism that benefits local communities.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="footer-logo-text">KISORO<span>TV</span></span>
+                    </div>
+                    <p class="footer-desc">The Voice of South-Western Uganda.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> +256 707 333422</li>
+                        <li><i class="fas fa-envelope"></i> info@kisorotv.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kisoro TV. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

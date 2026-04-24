@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture - Kisoro TV | Heritage & Traditions</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .culture-header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 20px 100px;
+            text-align: center;
+            color: var(--white);
+            margin-top: 80px;
+        }
+        
+        .culture-header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .culture-section {
+            padding: 80px 0;
+        }
+        
+        .culture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .culture-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+        
+        .culture-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .culture-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .culture-card-content {
+            padding: 30px;
+        }
+        
+        .culture-card h3 {
+            color: var(--primary-green);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .culture-card p {
+            color: var(--text-gray);
+            line-height: 1.8;
+        }
+        
+        .heritage-section {
+            background: var(--light-gray);
+            padding: 80px 0;
+        }
+        
+        .heritage-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .heritage-content img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        @media (max-width: 768px) {
+            .culture-header h1 {
+                font-size: 2rem;
+            }
+            
+            .heritage-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">KISORO<span>TV</span></span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="tourism.html" class="nav-link">Tourism</a></li>
+                <li class="nav-item"><a href="culture.html" class="nav-link active">Culture</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="culture-header">
+        <h1>Our Rich Culture</h1>
+        <p>Celebrating the heritage of Bafumbira, Bakiga, and Batwa</p>
+    </section>
+
+    <section class="culture-section">
+        <div class="container">
+            <h2 class="section-title">Cultural Communities</h2>
+            <div class="culture-grid">
+                <div class="culture-card">
+                    <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bafumbira">
+                    <div class="culture-card-content">
+                        <h3>Bafumbira</h3>
+                        <p>The Bafumbira people are known for their rich agricultural traditions, vibrant dances, and unique cultural practices. Their territory spans the fertile slopes of the Virunga volcanoes.</p>
+                    </div>
+                </div>
+                
+                <div class="culture-card">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Batwa">
+                    <div class="culture-card-content">
+                        <h3>Batwa</h3>
+                        <p>The Batwa are the indigenous forest people with a deep connection to the land. Their traditional knowledge of the forest and unique cultural heritage is an invaluable part of Kisoro's identity.</p>
+                    </div>
+                </div>
+                
+                <div class="culture-card">
+                    <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bakiga">
+                    <div class="culture-card-content">
+                        <h3>Bakiga</h3>
+                        <p>The Bakiga people are known for their terraced farming, strong community bonds, and vibrant cultural festivals. Their traditions reflect resilience and adaptation to the highland environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="heritage-section">
+        <div class="container">
+            <div class="heritage-content">
+                <div>
+                    <h2 style="color: var(--primary-green); margin-bottom: 20px; font-size: 2.2rem;">Cultural Festivals</h2>
+                    <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 20px;">Experience the vibrant cultural festivals that celebrate the heritage and traditions of Kisoro District. From the annual Abakyera Festival to traditional dance performances, there's always something to experience.</p>
+                    <ul style="color: var(--text-gray); line-height: 2;">
+                        <li><i class="fas fa-check" style="color: var(--accent-gold); margin-right: 10px;"></i>Traditional dance and music</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-gold); margin-right: 10px;"></i>Cultural storytelling</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-gold); margin-right: 10px;"></i>Traditional crafts and art</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-gold); margin-right: 10px;"></i>Local cuisine experiences</li>
+                    </ul>
+                </div>
+                <img src="https://images.unsplash.com/photo-1516426122078-c63e227faa9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cultural Festival">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="footer-logo-text">KISORO<span>TV</span></span>
+                    </div>
+                    <p class="footer-desc">The Voice of South-Western Uganda.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> +256 707 333422</li>
+                        <li><i class="fas fa-envelope"></i> info@kisorotv.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kisoro TV. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

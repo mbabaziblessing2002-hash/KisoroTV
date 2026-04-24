@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kisoro TV - The Voice of South-Western Uganda. News, Tourism, Culture, and Community from Kisoro District.">
+    <title>Kisoro TV - The Voice of the Highlands | Kisoro District, Uganda</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">KISORO<span>TV</span></span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="tourism.html" class="nav-link">Tourism</a></li>
+                <li class="nav-item"><a href="culture.html" class="nav-link">Culture</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+                <div class="hero-content">
+                    <h1 class="hero-title">The Voice of the <span class="highlight">Highlands</span></h1>
+                    <p class="hero-subtitle">Discover the beauty, culture, and stories of Kisoro District</p>
+                    <div class="hero-buttons">
+                        <a href="tourism.html" class="btn btn-primary">Explore Tourism</a>
+                        <a href="news.html" class="btn btn-secondary">Latest News</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1589139246521-4588d5970993?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+                <div class="hero-content">
+                    <h1 class="hero-title">Home of the <span class="highlight">Mountain Gorillas</span></h1>
+                    <p class="hero-subtitle">Experience Mgahinga Gorilla National Park</p>
+                    <div class="hero-buttons">
+                        <a href="tourism.html" class="btn btn-primary">Plan Your Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+                <div class="hero-content">
+                    <h1 class="hero-title">Rich <span class="highlight">Culture & Heritage</span></h1>
+                    <p class="hero-subtitle">Celebrating Bafumbira and Batwa traditions</p>
+                    <div class="hero-buttons">
+                        <a href="culture.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn prev" id="prevSlide">&#10094;</button>
+        <button class="slider-btn next" id="nextSlide">&#10095;</button>
+        <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <!-- Featured Sections -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">What We Cover</h2>
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <div class="featured-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Local News</h3>
+                    <p>Stay updated with the latest developments, events, and stories from Kisoro District.</p>
+                    <a href="news.html" class="card-link">Read News <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="featured-card">
+                    <div class="featured-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Tourism</h3>
+                    <p>Explore volcanic peaks, gorilla trekking, and breathtaking landscapes of the Virungas.</p>
+                    <a href="tourism.html" class="card-link">Discover More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="featured-card">
+                    <div class="featured-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Culture</h3>
+                    <p>Immerse yourself in the rich traditions of Bafumbira, Bakiga, and Batwa communities.</p>
+                    <a href="culture.html" class="card-link">Explore Culture <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="featured-card">
+                    <div class="featured-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Content</h3>
+                    <p>Watch documentaries, interviews, and live streams from across the district.</p>
+                    <a href="#" class="card-link">Watch Videos <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News Preview -->
+    <section class="news-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Stories</h2>
+                <a href="news.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="news-grid">
+                <article class="news-card featured">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1547970810-dc1eac37d174?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Featured News">
+                        <span class="news-category">Tourism</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date"><i class="far fa-calendar"></i> April 24, 2026</span>
+                        </div>
+                        <h3 class="news-title">Mgahinga Gorilla National Park Reports Record Visitor Numbers</h3>
+                        <p class="news-excerpt">The park has seen a 40% increase in tourism this year, boosting local economy and conservation efforts...</p>
+                        <a href="news.html" class="read-more">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <div class="news-sidebar">
+                    <article class="news-card compact">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1516426122078-c63e227faa9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="News">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">Community</span>
+                            <h4>New Road Infrastructure Connects Remote Villages</h4>
+                            <span class="news-date">April 22, 2026</span>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card compact">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="News">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">Culture</span>
+                            <h4>Annual Abakyera Festival Dates Announced</h4>
+                            <span class="news-date">April 20, 2026</span>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card compact">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="News">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">Environment</span>
+                            <h4>Lake Mutanda Conservation Project Launched</h4>
+                            <span class="news-date">April 18, 2026</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tourism Highlights -->
+    <section class="tourism-highlights">
+        <div class="container">
+            <h2 class="section-title">Must-Visit Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1589139246521-4588d5970993?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gorilla Trekking">
+                        <div class="destination-overlay">
+                            <h3>Gorilla Trekking</h3>
+                            <p>Meet the mountain gorillas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Volcano Hiking">
+                        <div class="destination-overlay">
+                            <h3>Volcano Hiking</h3>
+                            <p>Climb the Virunga peaks</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Lake Mutanda">
+                        <div class="destination-overlay">
+                            <h3>Lake Mutanda</h3>
+                            <p>Serene waters & sunsets</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Forest Walks">
+                        <div class="destination-overlay">
+                            <h3>Forest Walks</h3>
+                            <p>Explore biodiversity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="tourism.html" class="btn btn-primary btn-large">Plan Your Adventure</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Subscribe to Kisoro TV</h2>
+                <p>Get the latest news, tourism updates, and cultural stories delivered to your inbox.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required class="newsletter-input">
+                    <button type="submit" class="btn btn-secondary">Subscribe Now</button>
+                </form>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="footer-logo-text">KISORO<span>TV</span></span>
+                    </div>
+                    <p class="footer-desc">The Voice of South-Western Uganda. Bringing you news, culture, tourism, and community stories from Kisoro District.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">Latest News</a></li>
+                        <li><a href="tourism.html">Tourism Guide</a></li>
+                        <li><a href="culture.html">Culture & Heritage</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Destinations</h4>
+                    <ul class="footer-links">
+                        <li><a href="tourism.html#mgahinga">Mgahinga Gorilla Park</a></li>
+                        <li><a href="tourism.html#volcanoes">Virunga Volcanoes</a></li>
+                        <li><a href="tourism.html#mutanda">Lake Mutanda</a></li>
+                        <li><a href="tourism.html#caves">Garama Cave</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Kisoro Town, Uganda</li>
+                        <li><i class="fas fa-phone"></i> +256 707 333422</li>
+                        <li><i class="fas fa-envelope"></i> info@kisorotv.com</li>
+                        <li><i class="fas fa-clock"></i> Mon - Fri: 8AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kisoro TV. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> for Kisoro District</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

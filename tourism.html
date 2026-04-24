@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism - Kisoro TV | Explore Kisoro District</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .tourism-header {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 20px 100px;
+            text-align: center;
+            color: var(--white);
+            margin-top: 80px;
+        }
+        
+        .tourism-header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .tourism-section {
+            padding: 80px 0;
+        }
+        
+        .tourism-section:nth-child(even) {
+            background: var(--light-gray);
+        }
+        
+        .destination-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        
+        .destination-detail:nth-child(even) {
+            direction: rtl;
+        }
+        
+        .destination-detail:nth-child(even) > * {
+            direction: ltr;
+        }
+        
+        .destination-detail img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .destination-detail h2 {
+            color: var(--primary-green);
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+        }
+        
+        .destination-detail p {
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .tourism-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .destination-detail {
+                grid-template-columns: 1fr;
+            }
+            
+            .destination-detail:nth-child(even) {
+                direction: ltr;
+            }
+            
+            .tourism-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">KISORO<span>TV</span></span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="tourism.html" class="nav-link active">Tourism</a></li>
+                <li class="nav-item"><a href="culture.html" class="nav-link">Culture</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="tourism-header">
+        <h1>Explore Kisoro</h1>
+        <p>Discover breathtaking landscapes, wildlife, and adventure</p>
+    </section>
+
+    <section class="tourism-section">
+        <div class="container">
+            <div class="destination-detail">
+                <div>
+                    <h2>Mgahinga Gorilla National Park</h2>
+                    <p>Home to the endangered mountain gorillas, Mgahinga offers one of the most incredible wildlife experiences in Africa. Trek through dense bamboo forests to encounter these magnificent creatures in their natural habitat.</p>
+                    <ul style="color: var(--text-gray); line-height: 2;">
+                        <li><i class="fas fa-check" style="color: var(--accent-gold); margin-right: 10px;"></i>Gorilla trekking permits available</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-gold); margin-right: 10px;"></i>Golden monkey tracking</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-gold); margin-right: 10px;"></i>Guided nature walks</li>
+                    </ul>
+                </div>
+                <img src="https://images.unsplash.com/photo-1589139246521-4588d5970993?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Gorilla Trekking">
+            </div>
+            
+            <div class="destination-detail">
+                <div>
+                    <h2>Virunga Volcanoes</h2>
+                    <p>Climb the majestic Virunga volcanoes - Mount Muhabura, Mount Gahinga, and Mount Sabyinyo. These volcanic peaks offer challenging hikes with spectacular views of the surrounding landscapes.</p>
+                    <ul style="color: var(--text-gray); line-height: 2;">
+                        <li><i class="fas fa-check" style="color: var(--accent-gold); margin-right: 10px;"></i>Mount Muhabura (4,127m)</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-gold); margin-right: 10px;"></i>Mount Sabyinyo (3,634m)</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-gold); margin-right: 10px;"></i>Mount Gahinga (3,474m)</li>
+                    </ul>
+                </div>
+                <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Volcanoes">
+            </div>
+            
+            <div class="destination-detail">
+                <div>
+                    <h2>Lake Mutanda</h2>
+                    <p>Known as the "Place of Islands," Lake Mutanda offers serene waters surrounded by stunning volcanic scenery. Perfect for canoeing, fishing, and enjoying breathtaking sunsets.</p>
+                    <ul style="color: var(--text-gray); line-height: 2;">
+                        <li><i class="fas fa-check" style="color: var(--accent-gold); margin-right: 10px;"></i>Canoeing and boat rides</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-gold); margin-right: 10px;"></i>Island hopping</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-gold); margin-right: 10px;"></i>Community visits</li>
+                    </ul>
+                </div>
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lake Mutanda">
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Plan Your Visit</h2>
+                <p>Contact us for tourism information and travel planning assistance</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="footer-logo-text">KISORO<span>TV</span></span>
+                    </div>
+                    <p class="footer-desc">The Voice of South-Western Uganda.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> +256 707 333422</li>
+                        <li><i class="fas fa-envelope"></i> info@kisorotv.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kisoro TV. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
